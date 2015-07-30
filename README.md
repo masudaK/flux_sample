@@ -13,9 +13,9 @@ localhost:3000
 ```
 
 ## 学習
-ソースコードを見る順番は、以下をオススメします。
 
 ### redux/counter
+ソースコードを見る順番は、以下をオススメします。
 
 - containers/App.js
 - containers/CounterApp.js
