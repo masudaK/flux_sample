@@ -32,7 +32,7 @@ localhost:3000
 
 と理解しています。間違いがあれば、訂正頂けると助かります。
 
-※ サンプルのソースコードはhttps://github.com/gaearon/redux/tree/master/examples/counterから持ってきたので、時間が経つとupstreamと差が出てしまう可能性があります。ご了承下さい。
+※ サンプルのソースコードは[https://github.com/gaearon/redux/tree/master/examples/counter](https://github.com/gaearon/redux/tree/master/examples/counter)から持ってきたので、時間が経つとupstreamと差が出てしまう可能性があります。ご了承下さい。
 
 ### より理解を深めるために
 - [人気のFluxフレームワークReduxをさわってみた](http://amagitakayosi.hatenablog.com/entry/2015/07/30/000000
