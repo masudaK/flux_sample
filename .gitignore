@@ -2,3 +2,4 @@ redux/counter_browserify/node_modules/*
 redux/counter_webpack/node_modules/*
 redux/counter_browserify/npm-debug.log
 redux/counter_webpack/npm-debug.log
+npm-debug.log
