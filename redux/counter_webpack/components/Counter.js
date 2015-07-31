@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import * as CounterActions from '../actions/CounterActions';
 
 export default class Counter extends Component {
   static propTypes = {
@@ -6,7 +7,14 @@ export default class Counter extends Component {
     increment2: PropTypes.func.isRequired,
     incrementIfOdd: PropTypes.func.isRequired,
     decrement: PropTypes.func.isRequired,
-    counter: PropTypes.number.isRequired
+    counter: PropTypes.number.isRequired,
+    initialize: PropTypes.func.isRequired,
+    initialize2: PropTypes.func.isRequired
+  };
+
+  componentDidMount() {
+    this.props.initialize();
+    this.props.initialize2();
   };
 
   // renderで描画するのはrefluxと変わらない。@connectでcounterを使いまわせるので、それを使いまわす。
