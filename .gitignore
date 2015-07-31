@@ -1,1 +1,2 @@
-redux/counter/node_modules/*
+redux/counter_browserify/node_modules/*
+redux/counter_webpack/node_modules/*
