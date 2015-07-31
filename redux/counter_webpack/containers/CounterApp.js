@@ -8,14 +8,20 @@ import * as CounterActions from '../actions/CounterActions';
 
 // ここ定義すると、Counterタグでcounter={counter}として{}が使え、ステートを持たせることができる。
 @connect(state => ({
-  counter: state.counter
-}))
+  counter: state.counter,
+}),
+        state2 =>(
+  counter2: state2.counter2
+        )
+        )
 export default class CounterApp extends Component {
   render() {
-    const { counter, dispatch } = this.props;
+    const { counter, dispatch, counter2 } = this.props;
     return (
-      <Counter counter={counter}
-               {...bindActionCreators(CounterActions, dispatch)} />
+      <div>
+        <Counter counter={counter} counter2={counter2}
+                 {...bindActionCreators(CounterActions, dispatch)} />
+      </div>
     );
   }
 }

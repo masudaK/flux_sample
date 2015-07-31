@@ -1,4 +1,4 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/ActionTypes';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER, INCREMENT_COUNTER2 } from '../constants/ActionTypes';
 
 // componentsで呼び出されているメソッドたち
 // これらに応じて、storeのメソッドが呼ばれている。
@@ -31,5 +31,12 @@ export function incrementAsync() {
     setTimeout(() => {
       dispatch(increment());
     }, 1000);
+  };
+}
+
+export function increment2() {
+  console.log('in increment2 action') // これは呼ばれてた
+  return {
+    type: INCREMENT_COUNTER2
   };
 }
