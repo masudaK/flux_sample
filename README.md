@@ -2,9 +2,20 @@
 There are a sample codes taken from upstream and some comment for well understanding but japanese.
 
 ## 動作確認
+browserifyでビルドしたものと、webpackでビルドしたものがあります。package.json等に多少差異があります。
 
 ```
-$ cd redux/counter
+$ cd redux/counter_browserify
+$ npm i
+$ npm run build
+$ npm start
+
+localhost:3000
+で確認
+
+OR
+
+$ cd redux/counter_webpack
 $ npm i
 $ npm start
 
