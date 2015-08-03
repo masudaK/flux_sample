@@ -56,3 +56,4 @@ localhost:3000
 【第4回】Webフロントエンドのモジュール管理 ……話題のBrowserifyと，RequireJS，webpack，duoを一挙紹介, WEB+DB PRESS Vol.84](http://gihyo.jp/magazine/wdpress/archive/2015/vol84)
 - [Emerging Web Technology研究室【第12回】Reactによるフロントエンド開発の変革, WEB+DB PRESS Vol.86](http://gihyo.jp/magazine/wdpress/archive/2015/vol86)
 - [Emerging Web Technology研究室【第13回】Flux ……フロントエンド開発の新しいアーキテクチャ, WEB+DB PRESS Vol.87](http://gihyo.jp/magazine/wdpress/archive/2015/vol87)
+- [React.jsチュートリアル【日本語翻訳】](http://mae.chab.in/archives/2529)
