@@ -1,8 +1,10 @@
 import { INCREMENT_COUNTER, DECREMENT_COUNTER, INCREMENT_COUNTER2, INITIALIZE_COUNTER, INITIALIZE_COUNTER2 } from '../constants/ActionTypes';
 var request = require('superagent');
 
-// componentsで呼び出されているメソッドたち
-// これらに応じて、storeのメソッドが呼ばれている。
+// componentsでpropTypesで定義されたのち、componentDidMountやJSXコード上で呼び出されているメソッドたち
+// これらに応じて、storeのメソッドが戻り値を返している。
+// storeのメソッドは必ず実行されてしまうので、定数を渡して、CASEで分岐しなければならない。
+// そのために、ここで定数を渡している。
 export function increment() {
   return {
     type: INCREMENT_COUNTER
@@ -50,6 +52,9 @@ export function initialize() {
   };
 }
 
+// AJAXで初期値を取得する場合
+// コールバックを使って、戻り値をdispatchしている。
+// その場合は、returnしなくていい模様。
 export function initialize2() {
   console.log('initialize2 action');
   return dispatch => {

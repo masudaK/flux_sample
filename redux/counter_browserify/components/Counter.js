@@ -8,9 +8,6 @@ export default class Counter extends Component {
     counter: PropTypes.number.isRequired
   };
 
-  // renderで描画するのはrefluxと変わらない。@connectでcounterを使いまわせるので、それを使いまわす。
-  // ...bindActionCreators(CounterActions, dispatch)しているので、propsにincrementやdecrementが使える。
-  // それらの定義はアクションを見ること。
   render() {
     const { increment, incrementIfOdd, decrement, counter } = this.props;
     return (

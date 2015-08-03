@@ -4,9 +4,6 @@ import { connect } from 'redux/react';
 import Counter from '../components/Counter';
 import * as CounterActions from '../actions/CounterActions';
 
-// containers/App.jsから呼ばれている。
-
-// ここ定義すると、Counterタグでcounter={counter}として{}が使え、ステートを持たせることができる。
 @connect(state => ({
   counter: state.counter
 }))

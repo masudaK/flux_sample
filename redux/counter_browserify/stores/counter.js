@@ -1,6 +1,5 @@
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/ActionTypes';
 
-// stateを受け取って、次のstateを返している。ただそれだけ。
 export default function counter(state = 0, action) {
   switch (action.type) {
   case INCREMENT_COUNTER:

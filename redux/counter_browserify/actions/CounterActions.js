@@ -1,7 +1,5 @@
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/ActionTypes';
 
-// componentsで呼び出されているメソッドたち
-// これらに応じて、storeのメソッドが呼ばれている。
 export function increment() {
   return {
     type: INCREMENT_COUNTER
